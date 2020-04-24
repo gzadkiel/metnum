@@ -1,0 +1,23 @@
+import numexpr as ne 
+def regulafalsi(f,a,b,tx,ty): 
+	
+	def fun(x): 
+		return ne.evaluate(f)
+	
+	if fun(a)*fun(b) < 0: 
+		n = c = 0 
+		ex = ey = 9999
+		while ex > tx and ey > ty:
+			n = n+1
+			cp = c
+			c = fun(b)*a-fun(a)*b/(fun(b)-fun(a))
+			ex = abs(c-cp)
+			ey = abs(fun(c))
+			if fun(c)*fun(b) < 0:
+				a = c
+			else:
+				b = c
+	else: 
+		print('no root found on [',a,' ',b,']')
+	
+	return print(n, c, func(c), ex, ey) 
