@@ -1,4 +1,3 @@
-import numexpr as ne
 def bisection(f,a,b,tx,ty):
 	
 	def fun(x):
