@@ -58,7 +58,6 @@ def regulafalsi(f,a,b,tx,ty):
 	return print(n, c, fun(c), ex, ey) 
 
 def fixedpoint(f,g,a,tx,ty):
-	#import numpy as np 
 	global n, c, ex, ey
 	
 	def fun(x):
@@ -66,9 +65,9 @@ def fixedpoint(f,g,a,tx,ty):
 	def gun(x):
 		return ne.evaluate(g)
 	x = var('x')
-	gd = sympify(g) 
-	gp = gd.diff(x)
-	gstr = str(gp)
+	gd = sympify(g) #str gets converted into a function
+	gp = gd.diff(x) #function derivative 
+	gstr = str(gp) #converted back to str
 	def gup(x):
 		return ne.evaluate(gstr) 
 	cond = gup(a)  
@@ -87,10 +86,55 @@ def fixedpoint(f,g,a,tx,ty):
 		print('please input another x = g(x) function') 
 	
 	return print(n, c, fun(c), ex, ey)
+	
+def newtonraphson(f,a,tx,ty): 
+	global n, c, ex, ey
+	
+	def fun(x):
+		return ne.evaluate(f) 
+	x = var('x')
+	g = sympify(f)
+	gd = g.diff(x) 
+	fd = str(gd)
+	def fund(x):
+		return ne.evaluate(fd)
+	
+	n = 0
+	c = a
+	ex = ey = 9999
+	while ex > tx and ey > ty:
+		n = n+1
+		cp = c
+		c = c - fun(cp)/fund(cp)
+		ex = abs(c-cp)
+		ey = abs(fun(c)) 
+	
+	return print(n, c, fun(c), ex, ey)
 
-
+def secant(f,a,b,tx,ty):
+	global n, c, ex, ey 
+	
+	def fun(x):
+		return ne.evaluate(f) 
+	n = 0
+	c = 0
+	ey = ex = 9999
+	while ex > tx and ey > ty:
+		n = n+1
+		cp = c
+		c = b - fun(b)*(b-a)/(fun(b)-fun(a))
+		ex = abs(c-cp)
+		ey = abs(fun(c))
+		if fun(c)*fun(b) < 0:
+			a = c
+		else: 
+			b = c
+			
+	return print(n, c, fun(c), ex, ey) 
 
 if __name__ == "__main__":
 	bisection() 
 	regulafalsi()
 	fixedpoint()
+	newtonraphson()
+	secant()
