@@ -45,3 +45,5 @@ end
 for j=1:3
 graphs = [graphs,drawing(XC,YC,resul,j)];
 end
+
+pullrequest
