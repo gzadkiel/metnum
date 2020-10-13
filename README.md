@@ -11,7 +11,7 @@ Packages required to run some of the scripts:
 
 To do: 
 - [X] Upload everything. 
-- [] Review and update all the scripts. 
-- [] ...
+- [ ] Review and update all the scripts. 
+- [ ] ...
 
 If you find any problems, please submit an issue. 
