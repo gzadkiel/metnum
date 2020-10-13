@@ -1,10 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} euler (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
-
 function y = euler (f,paso,inicial,final,fi)
 t=inicial:paso:final;
 T=size(t);

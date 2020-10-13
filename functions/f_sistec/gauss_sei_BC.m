@@ -1,9 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} gauss_sei_BC (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
 function [B,c] = gauss_sei_BC (A,b)
   tama=size(A);
 for i=1:1:tama(1)

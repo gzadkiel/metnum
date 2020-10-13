@@ -1,7 +1,7 @@
 clc
 clear 
 
-D = load('EJ15Data.txt.');
+D = load('.txt.');
 X = D(:,1);
 Y = D(:,2); 
 N = length(X); 

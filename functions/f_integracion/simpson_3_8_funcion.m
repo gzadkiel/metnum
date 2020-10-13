@@ -1,9 +1,3 @@
-##- texinfo -*- 
-## @deftypefn {} {@var{retval} =} simpson_3_8_funcion (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
 function resultado = simpson_3_8_funcion (funcion,X,limites)
   T=length(X);
 paso=abs(X(1)-X(2)); %%paso

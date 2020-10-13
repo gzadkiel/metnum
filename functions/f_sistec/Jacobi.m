@@ -1,9 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} Jacobi (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
 function X = Jacobi (A,b,error,X0,it)
 tama=size(A);
 Edd=true; %%por lo que sabemos hasta aca es EDD despues revisamos

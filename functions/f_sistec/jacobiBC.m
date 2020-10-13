@@ -1,8 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} jacobiBC (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
 function [B,c] = jacobiBC (A,b)
 tama=size(A);
 %%por lo que sabemos hasta aca es EDD despues revisamos

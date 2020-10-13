@@ -1,9 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} splinecubic (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
 function [ak,bk,ck,dk,mat,b] = splinecubic (puntos)
 %% hacemos los hk
 T=size(puntos); 

@@ -1,9 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} trapecios (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
 function resultado = trapecios (XY,limites)
 T=size(XY);
 paso=abs(XY(1,1)-XY(2,1)); %%paso

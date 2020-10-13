@@ -1,10 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} interpolacionlagrange (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
-
 function f = interpolacionlagrange (vecXY,x) %%necesita un vector de la forma [xo yo;x1 y1;...;xn yn] y un x adonde evaluar
 T=size(vecXY);%%vemos la cantidad de filas para saber los l(i)(cantidad de terminos a multiplicar)
 fun=0;%%setiamos funcion a 0

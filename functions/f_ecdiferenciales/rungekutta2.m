@@ -1,15 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} [x,y] = rungekutta2 (f,g,paso,inicial,final,fx,fy)
-##la funcion debe ser del tipo f(t,x,y) que es la funcion que nos da x 
-##                             g(t,x,y) que es la funcion que nos da y
-##             el paso es el h,
-##             inicial es el punto inicial de t
-##             final es el punto final de t
-##             fx es la funcion en un punto de partida para x
-##             fy es la funcion en un punto de partida para y
-## @seealso{}
-## @end deftypefn
-
 function [x,y] = rungekutta2 (f,g,paso,inicial,final,fx,fy)
 t=inicial:paso:final; %%calculamos los tk
 T=size(t);

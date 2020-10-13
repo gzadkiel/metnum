@@ -1,9 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} newton_prog (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
 function [prog,reg] = newtoninter_progresiva_regresiva (vecXY)
 T=size(vecXY);
 for i=1:T(1)  %%verificacion si esta ordenado el vector dado

@@ -1,10 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} simpson_1_3 (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
-
 function resultado = simpson_1_3 (XY,limites)
 T=size(XY);
 paso=abs(XY(1,1)-XY(2,1)); %%paso

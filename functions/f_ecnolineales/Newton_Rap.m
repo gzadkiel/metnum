@@ -1,10 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{Xn} =} Newton-Rap (@var{F}, @var{f(derivada)},@var{X0}, @var{error},@var{maxiter})
-##
-##F es la funcion a encontrar la raiz, f es la derivada de dicha funcion , X0 es el punto inicial para iniciar el metodo, ERROR es el error con el eje Y [abs(f(xi))], MAXITER es el maximo de iteraciones posibles
-## @seealso{}
-## @end deftypefn
-
 function Xn = Newton_Rap (F,f,X0,error,maxiter)
 i=0;
 er=9999999;  %% inicio de acumuladores 

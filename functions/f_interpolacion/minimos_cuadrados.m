@@ -1,9 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} minimos_cuadrados (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
 ## puntos tiene que ser un vector de la forma [xo yo;x1 y1;...;xn yn] y cant_ec son la cantidad de ecuaciones que queremos
 ## mientras mas ecuaciones mayor el grado del polinomio, el grado esta dado por cant_ec-1
 ## el ploinomio buscado es de la forma a0+a1*x+a2*x^2+.....+an*x^n-1

@@ -1,9 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} ec_dif_hiperbolicas (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
 function mat= ec_dif_hiperbolicas (f,g,funinicial,funfinal,xin,xfin,H,tin,tfin,K,r)
 %%f es una funcion del tipo f(x,t0), que indica posiciones iniciales para t=0
 %%g es una funcion del tipo g(x,t0), que indica la velocidad inicial punto a punto para t=0

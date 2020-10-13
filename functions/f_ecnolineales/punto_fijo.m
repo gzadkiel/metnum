@@ -1,10 +1,3 @@
-## -*- texinfo -*- 
-## @deftypefn {} {@var{retval} =} punto_fijo (@var{f},@var{g}, @var{X0},@var{error}, @var{maxiter})
-##
-##   F es la funcion a encontrar la raiz, G es la funcion a utilizar en este metodo [g(x)=x](sale de f(x)), X0 es el punto inicial para iniciar el metodo, ERROR es el error con el eje x [abs(f(xi))], MAXITER es el maximo de iteraciones posibles
-## @seealso{}
-## @end deftypefn
-
 function Xn = punto_fijo (g,X0,error,maxiter)
 i=0;
 er=9999999;
