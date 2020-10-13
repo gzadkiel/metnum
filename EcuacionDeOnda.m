@@ -37,4 +37,3 @@ for j=3:length(vec_tiem)
   end
 end
 O 
-
