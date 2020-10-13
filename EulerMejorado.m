@@ -1,6 +1,6 @@
 #EulerMejorado
 clear all; clc; close all; 
-h = input('Número de paso: '); 
+h = input('NÃºmero de paso: '); 
 t0 = input('t inicial: '); 
 y0 = input('y inicial: '); 
 tf = input('Valor a especializar: '); 
