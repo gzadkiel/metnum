@@ -34,6 +34,6 @@ for i=1:n
   xant = xsol; 
 end
 res1 = ['la raiz es: ',num2str(xant)]; disp(res1) 
-#res2 = ['cant. de interaciones: ',num2str(i)]; disp(res2) 
+res2 = ['cant. de interaciones: ',num2str(i)]; disp(res2) 
 res3 = ['error en x: ',num2str(ex)]; disp(res3) 
 res4 = ['error en y: ',num2str(ey)]; disp(res4) 
