@@ -13,4 +13,4 @@ for i=1:length(xx)
     max = funev; 
   end
 end
-res = ['el maximo es: ',num2str(max)]; disp(res) 
+res = ['el maximo es: ',num2str(max)]; disp(res)
