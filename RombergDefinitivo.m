@@ -57,4 +57,4 @@ for j=2:k
  end
 end
 disp('Romberg Matrix: ');
-R 
+R
