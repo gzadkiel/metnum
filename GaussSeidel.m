@@ -1,3 +1,5 @@
+#lecturamatriz.m is required to run this script.
+
 disp('sistema A*x = b')
 disp('matriz de coeficientes A: ')
 A = lecturamatriz; 
