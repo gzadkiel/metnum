@@ -1,3 +1,5 @@
+#requires symbolic package to work correctly, make sure you have it installed before attempting to run this
+
 pkg load symbolic 
 syms x 
 f = input('funcion: '); 
@@ -24,16 +26,14 @@ end
 n = input('cant. de iteraciones: '); 
 x0 = input('valor inicial: '); 
 xant = x0; 
-ey = ex = 999;
-#i = 0;  
+ey = ex = 999;  
 for i=1:n 
-  #i = i+1; 
   xsol = ptof(xant); 
   ex = abs(xsol-xant); 
   ey = abs(F(xsol)); 
   xant = xsol; 
 end
 res1 = ['la raiz es: ',num2str(xant)]; disp(res1) 
-res2 = ['cant. de interaciones: ',num2str(i)]; disp(res2) 
+#res2 = ['cant. de interaciones: ',num2str(n)]; disp(res2) 
 res3 = ['error en x: ',num2str(ex)]; disp(res3) 
 res4 = ['error en y: ',num2str(ey)]; disp(res4) 

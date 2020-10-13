@@ -1,3 +1,5 @@
+#requires symbolic package to work correctly, make sure you have it installed before attempting to run this
+
 pkg load symbolic 
 syms x 
 f = input('funcion: '); 
