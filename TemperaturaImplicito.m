@@ -1,6 +1,6 @@
-#function [T] = ej14guia7_2 (T,inx,finx,H,int,fint,K,r)
-#clc
+clc
 clear 
+
 h = input('?x = h: '); 
 k = input('?t = k: '); 
 cte = input('Constante: '); 
