@@ -1,4 +1,5 @@
-#lecturamatriz.m is required to run this script.
+#lecturamatriz.m is required to run this script
+#includes both while and for cycles, choose one depending on your needs 
 
 disp('sistema A*x = b')
 disp('matriz de coeficientes A: ')
