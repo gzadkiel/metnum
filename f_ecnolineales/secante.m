@@ -4,8 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-04-05
 
 function Xn = secante (F,X1,X2,error,errortype,maxiter)
 i=0;

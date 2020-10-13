@@ -4,9 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-05-31
-
 function mat= ec_dif_hiperbolicas (f,g,funinicial,funfinal,xin,xfin,H,tin,tfin,K,r)
 %%f es una funcion del tipo f(x,t0), que indica posiciones iniciales para t=0
 %%g es una funcion del tipo g(x,t0), que indica la velocidad inicial punto a punto para t=0

@@ -3,10 +3,6 @@
 ##
 ## @seealso{}
 ## @end deftypefn
-
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-04-15
-
 function [B,c] = jacobiBC (A,b)
 tama=size(A);
 %%por lo que sabemos hasta aca es EDD despues revisamos

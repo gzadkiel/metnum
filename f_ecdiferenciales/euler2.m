@@ -20,9 +20,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-06-08
-
 function retval = euler2 (f,g,paso,t0,tf,f0,g0)
 t=t0:paso:tf;
 T=length(t);

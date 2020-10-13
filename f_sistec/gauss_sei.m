@@ -4,9 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-04-14
-
 function X = gauss_sei (A,b,error,X0,it)
 tama=size(A);
 Edd=true; %%por lo que sabemos hasta aca es EDD despues revisamos

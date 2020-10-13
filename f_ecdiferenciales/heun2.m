@@ -30,12 +30,6 @@ function [t,dx,dy] = heun2(f1,f2,x0,y0,h,tf)
 % time-step of 0.01 and initial conditions 0.1, 0.1 and 0.1 for x, y and z
 % respectively.
 %
-% Coded by KAMDEM K. Paul Didier
-% University of Dschang/Cameroon
-% kamdempauldiddy@gmail.com
-%
-%See also : RK4 and Euler
-%
 dx=[];
 dy=[];
 t=[];

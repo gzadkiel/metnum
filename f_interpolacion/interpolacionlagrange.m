@@ -4,8 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-05-06
 
 function f = interpolacionlagrange (vecXY,x) %%necesita un vector de la forma [xo yo;x1 y1;...;xn yn] y un x adonde evaluar
 T=size(vecXY);%%vemos la cantidad de filas para saber los l(i)(cantidad de terminos a multiplicar)

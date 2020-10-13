@@ -1,19 +1,11 @@
 pkg load symbolic
+#updated
 
-% Datos:
-#d = load();
-#xv = [1 3 4 8];
-#yv = [2 3 2 10];
-#xv = [0 4 10 15 20];
-#yv = [30 10 1.92 .59 .12];
-#xv = [2 4.25 5.25 7.81 9.2 10];
-#yv = [7.2 7.1 6 5 3.5 5];
-#xv = 0.5:0.1:2.5;
-#yv = [3.5189 3.3340 3.0103 3.0959 2.9982 2.9976 3.0462 3.2603 3.1026 3.3524 3.3079 3.8993 3.9111 4.4722 4.6648 4.8027 5.5323 5.7991 6.4535 6.9109 7.4850];
-yv = [5.12 6.18 6.77 6.65 6.63 5.9 5.48 6.02 10.34 8.51];
-xv = [2.3 2.54 2.95 3.77 4.18 5.31 5.53 8.83 9.48 14.2];
+#datos:
+yv = [];
+xv = [];
 
-% Matriz de diferencias (no incluye la columna de x): mtx
+#matriz de diferencias (no incluye la columna de x): mtx
 n = length(xv);
 mtx = zeros(n,n);
 mtx(:,1) = yv';
@@ -30,7 +22,7 @@ vpa(mtx,4)
 
 syms x
 
-% Polinomio progresivo:
+#polinomio progresivo:
 pol_p = 0;
 m = 1;
 for i=1:n
@@ -53,14 +45,14 @@ simplify(pol_p)
 fprintf('Vector de coeficientes\n');
 coef_p = sym2poly(num_p)/sym2poly(den_p)
 
-% Polinomio regresivo:
+#polinomio regresivo:
 pol_r = 0;
 m = n;
 for i=1:n
-    % La variable auxiliar es para la extracción de las raíces
+    #la variable auxiliar es para la extracción de las raíces
     aux = 1;
-    % Este for comienza cuando n-1 sea igual a m, es decir, en la segunda
-    % iteración:
+    #este for comienza cuando n-1 sea igual a m, es decir, en la segunda
+    #iteración:
     for k=n-1:-1:m
         aux = aux*(x-xv(k+1));
     end

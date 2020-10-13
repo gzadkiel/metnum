@@ -10,9 +10,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-05-27
-
 function [x,y] = rungekutta2 (f,g,paso,inicial,final,fx,fy)
 t=inicial:paso:final; %%calculamos los tk
 T=size(t);

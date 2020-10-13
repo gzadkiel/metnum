@@ -4,9 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-05-20
-
 function R = romberg (xy,limites) %%entrada vector de la forma [xo yo;x1 y1;...;xn yn] y limites inferior y superior L=[inf,sup]
 T=size(xy);
 %% buscamos los indices a y b para luego buscar f(a) y f(b) 

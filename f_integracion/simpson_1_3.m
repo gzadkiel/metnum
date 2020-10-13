@@ -4,8 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-05-18
 
 function resultado = simpson_1_3 (XY,limites)
 T=size(XY);

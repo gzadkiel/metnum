@@ -4,9 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-05-11
-
 function var = error_cuadratico_medio (xy,fun)
 T=size(xy);
 %%evaluamos la funcion en los puntos y los puntos y los sumamos

@@ -4,9 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-06-08
-
 function resultado = simpson_3_8_funcion (funcion,X,limites)
   T=length(X);
 paso=abs(X(1)-X(2)); %%paso

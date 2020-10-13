@@ -5,9 +5,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-04-05
-
 function Xn = punto_fijo (g,X0,error,maxiter)
 i=0;
 er=9999999;

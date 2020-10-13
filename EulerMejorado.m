@@ -1,4 +1,5 @@
-#EulerMejorado
+#Heun
+
 clear all; clc; close all; 
 h = input('Número de paso: '); 
 t0 = input('t inicial: '); 
@@ -14,14 +15,13 @@ for i=1:length(tv)-1
   yv(i+1) = yv(i) + (h/2)*(tr1+tr2);
 end
 
-#for i=1:length(tv)-1
-#  yv(i+1) = yv(i) + (h/2)*(F(yv
-
 #yv(1) = [];
 disp('Valores de t: ')
 disp(tv)
 disp('Valores de y: ')
 disp(yv) 
+
+#optional: 
 #plot(tv,yv,'-o')
 #grid(gca,'minor')
 #grid on 

@@ -1,9 +1,8 @@
-#function lagrange_value
-
 #read data from a text file (must be located in the same folder as the scipt)
 #data = load('.txt') 
 #X = data(:,1);
 #Y = data(:,2); 
+
 #manual data input
 #X = [];
 #Y = [];
@@ -24,5 +23,4 @@ end
 
 res = ['the function on the given value is approximately: ',num2srt(pol)]; disp(res)
 disp(eles)
-#plot(X,Y)  
-#end
+#plot(X,Y)

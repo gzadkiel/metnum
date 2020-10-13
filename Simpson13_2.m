@@ -1,15 +1,13 @@
-#clear; clc; 
-#d = load('Parcial20182a.txt');
+
+clear; clc; 
+#read from text file
+#d = load('.txt');
 #X = d(:,1);
 #Y = d(:,2);
 
-#X = [0 12 24 36 48]
-#Y = [37.8 45.1 44.8 36.9 30.2]
-#Y = [8.5 9.2 10.8 11.6 18.4 32 36 48 40 29 17 13.3 8.3]
-#X = [1 1.23 1.5 1.75 2];
-#Y = [1 sqrt(1.25) sqrt(1.5) sqrt(1.75) sqrt(2)];
-X = [2 6 10];
-Y = [0 32 96];
+#manual input
+X = [];
+Y = [];
 
 a = input('Lim. inferior del intervalo: ');
 b = input('Lim. superior del intervalo: '); 

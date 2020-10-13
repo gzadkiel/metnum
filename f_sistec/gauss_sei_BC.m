@@ -4,9 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-04-15
-
 function [B,c] = gauss_sei_BC (A,b)
   tama=size(A);
 for i=1:1:tama(1)

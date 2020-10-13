@@ -4,9 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-05-18
-
 function resultado = trapecios (XY,limites)
 T=size(XY);
 paso=abs(XY(1,1)-XY(2,1)); %%paso

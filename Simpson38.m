@@ -8,6 +8,7 @@ h = (b-a)/n;
 #d = load('ptos.txt');
 #X = d(:,1);
 #Y = d(:,2);
+
 X = 1:.25:2
 F = @(x) (sqrt(x));
 Y = arrayfun(F,X); 

@@ -5,9 +5,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-04-05
-
 function Xn = Newton_Rap (F,f,X0,error,maxiter)
 i=0;
 er=9999999;  %% inicio de acumuladores 

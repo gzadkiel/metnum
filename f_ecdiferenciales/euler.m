@@ -4,8 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-05-24
 
 function y = euler (f,paso,inicial,final,fi)
 t=inicial:paso:final;

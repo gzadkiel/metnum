@@ -4,9 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-05-10
-
 function [ak,bk,ck,dk,mat,b] = splinecubic (puntos)
 %% hacemos los hk
 T=size(puntos); 

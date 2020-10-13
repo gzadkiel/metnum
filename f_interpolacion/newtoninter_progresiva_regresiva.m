@@ -4,9 +4,6 @@
 ## @seealso{}
 ## @end deftypefn
 
-## Author: gaspar <gaspar@DESKTOP-LIBGGT3>
-## Created: 2020-05-06
-
 function [prog,reg] = newtoninter_progresiva_regresiva (vecXY)
 T=size(vecXY);
 for i=1:T(1)  %%verificacion si esta ordenado el vector dado
@@ -27,7 +24,7 @@ for i=1:(T(1)-1)  %%filas
         coef(i,1)=(vecXY(i+1,2)-vecXY(i,2))/(vecXY(i+1,1)-vecXY(i,1)); %%primera columna con los coefs
 endfor
 for j=2:T(1)-1 %%columnas
-  for i=1:T(1)-j  %%filas (tamaño de la matriz menos la columna) 
+  for i=1:T(1)-j  %%filas (tamaï¿½o de la matriz menos la columna) 
         coef(i,j)=(coef(i+1,j-1)-coef(i,j-1))/(vecXY(j+i,1)-vecXY(i,1));  %%resto columnas
   endfor
 endfor
