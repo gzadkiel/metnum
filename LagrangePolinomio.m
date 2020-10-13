@@ -2,7 +2,7 @@ pkg load symbolic;
 format short
 
 #read data from a text file (must be located in the same folder as the scipt)
-#data = load('Parcial20182a.txt') 
+#data = load('.txt') 
 #X = data(:,1);
 #Y = data(:,2);
 

@@ -11,8 +11,8 @@ Xf = input('x final: ');
 disp('Condiciones en los bordes: '); 
 Bi = input('borde incial: '); 
 Bf = input('borde final: '); 
-F1 = @(x) (sin(pi*x)); #posicion inicial 
-F2 = @(x) (2*pi*sin(2*pi*x)); #velocidad inicial 
+F1 = @(x) (); #posicion inicial 
+F2 = @(x) (); #velocidad inicial 
 
 vec_dist = Xi:h:Xf;
 vec_tiem = Ti:k:Tf; 
@@ -27,7 +27,7 @@ end
 O; 
 
 for j=2:length(vec_dist)-1 
-  O(2,j) = (r/2)*(O(1,j+1)+O(1,j-1)) + (1-r)*O(1,j) + k*F2(vec_dist(j)); #SACO "2"*K*F2
+  O(2,j) = (r/2)*(O(1,j+1)+O(1,j-1)) + (1-r)*O(1,j) + k*F2(vec_dist(j));
 end
 
 for j=3:length(vec_tiem)

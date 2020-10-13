@@ -4,9 +4,9 @@ clear
 close all  
 
 #Ingresar/modificar funciones manualmente: 
-f1 = @(x,y,z,t) (15-.3*x); #dx/dt
-f2 = @(x,y,z,t) (.3*(x-y)); #dy/dt
-f3 = @(x,y,z,t) (.3*(y-z)); 
+f1 = @(x,y,z,t) (); #dx/dt
+f2 = @(x,y,z,t) (; #dy/dt
+f3 = @(x,y,z,t) (); #dz/dt 
 
 h = input('Paso: '); 
 t0 = input('t inicial: '); 

@@ -1,7 +1,7 @@
 #clc 
 #clear 
 
-#D = load("EJ15Data.txt"); #change 'file.txt' to the name of your file 
+#D = load(".txt"); #change 'file.txt' to the name of your file 
 #read values from the file as vectors 
 #X = D(:,1); 
 #Y = D(:,2);

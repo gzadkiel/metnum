@@ -7,9 +7,10 @@ h = input('?x = h: ');
 k = input('?t = k: '); 
 cte = input('Constante: '); 
 c = ((cte^2)*k)/h^2;
-#En caso de tener dos funciones para la T inicial: 
-F1 = @(x) (100); #x<1
-F2 = @(x) (100); #x>=1  
+#en caso de tener dos funciones para la T inicial: 
+#cambiar los limites segun el problema
+F1 = @(x) (); #x<1
+F2 = @(x) (); #x>=1  
 disp('Distancia entre bordes: ')
 dX = input('... '); 
 disp('Temperatura en los bordes: ') 
@@ -47,11 +48,6 @@ end
 #T(1,end) = 50;
 
 #Calculo de temperatura: 
-#for i=2:1:length(vector_distancia)-1
-#  for j=2:1:length(vector_tiempo) 
-#    T(j,i) = (1-2*c)*T(j-1,i) + c*(T(j-1,i+1)+T(j-1,i-1));  
-#  end
-#end
 for j=2:1:length(vector_tiempo) 
   for i=2:1:length(vector_distancia)-1
     T(j,i) = (1-2*c)*T(j-1,i) + c*(T(j-1,i+1)+T(j-1,i-1));  

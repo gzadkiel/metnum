@@ -4,8 +4,8 @@ h = input('Número de paso: ');
 t0 = input('t inicial: ');  
 y0 = input('y inicial: '); 
 tf = input('Valor a especializar: '); 
-F = @(t,y) ((t-y)/2); #Funcion 
-tv = t0:h:tf #Valores de t como vector.
+F = @(t,y) (); 
+tv = t0:h:tf 
 yv(1) = y0;  
 
 for i=1:length(tv)-1

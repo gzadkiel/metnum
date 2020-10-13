@@ -1,4 +1,5 @@
 clear
+#ignore these values
 #X = [1.0472 1.1781 1.309 1.4399 1.5708];
 #Y = [-1 -.2584 1.0891 1.5167 .6366];
 #X = [1.5708 1.7671 1.9634 2.1597 2.356 2.5523 2.7486 2.9449 3.1412];
@@ -6,9 +7,10 @@ clear
 
 X = [];
 Y = [];
-funcs = @(x) (sin(x^2)/x);
-X = pi/4:5*pi/64:3*pi/2; 
-Y = arrayfun(funcs,X); 
+
+#funcs = @(x) ();
+#X = []; 
+#Y = arrayfun(funcs,X); 
 
 
 a = input('Limite inferior: '); 

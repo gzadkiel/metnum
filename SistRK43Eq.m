@@ -4,9 +4,9 @@ clc
 format short
 
 #Ingresar/modificar funciones manualmente: 
-f1 = @(t,x,y,z) (15-.3*x); #dx/dt
-f2 = @(t,x,y,z) (.3*(x-y)); #dy/dt 
-f3 = @(t,x,y,z) (.3*(y-z));
+f1 = @(t,x,y,z) (); #dx/dt
+f2 = @(t,x,y,z) (); #dy/dt 
+f3 = @(t,x,y,z) (); #dz/dt
 
 h = input('Step: '); 
 t0 = input('initial t: ');

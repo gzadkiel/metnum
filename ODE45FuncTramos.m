@@ -1,4 +1,6 @@
 #test ode45 con funcion por tramos
+#change all the values to use it
+
 function dydx = ODE45FuncTramos(t,Y)
   if Y(1) < 30 
     d = (9.81-sign(Y(2))*(0.25/68.1)*Y(2)^2); 

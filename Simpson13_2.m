@@ -1,4 +1,3 @@
-
 clear; clc; 
 #read from text file
 #d = load('.txt');

@@ -4,8 +4,8 @@ clear all
 format short
 
 #Ingresar/modificar funciones manualmente: 
-f1 = @(t,x,y) (.03*x-.01*y); #dx/dt
-f2 = @(t,x,y) (.04*y-.01*x); #dy/dt 
+f1 = @(t,x,y) (); #dx/dt
+f2 = @(t,x,y) (); #dy/dt 
 
 h = input('Step: '); 
 t0 = input('initial t: ');

@@ -5,12 +5,13 @@ b = input('Limite sup. del intervalo: ');
 #n = (b-a)/h; 
 h = (b-a)/n; 
 
-#d = load('ptos.txt');
+#d = load('.txt');
 #X = d(:,1);
 #Y = d(:,2);
 
-X = 1:.25:2
-F = @(x) (sqrt(x));
+#Y = [];
+X = [];
+F = @(x) ();
 Y = arrayfun(F,X); 
 
 

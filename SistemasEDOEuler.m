@@ -4,8 +4,8 @@ clear
 close all  
 
 #Ingresar/modificar funciones manualmente: 
-g = @(x,y,t) (.03*x-.01*y); #dx/dt
-f = @(x,y,t) (.04*y-.01*x); #dy/dt
+g = @(x,y,t) (); #dx/dt
+f = @(x,y,t) (); #dy/dt
 
 h = input('Paso: '); 
 t0 = input('t inicial: '); 
@@ -29,8 +29,8 @@ end
 #xv(i+1) = xv(i) + h*f(xv(i),yv(i),tv(i))
 
 
+#EulerMejorado
 #for i=1:length(tv)-1
-  #EulerMejorado
 #  yv(i+1) = yv(i) + (h/2)*(g(xv(i),yv(i),tv(i)) + g(xv(i) + h*f(xv(i),yv(i),tv(i)),yv(i) + h*g(xv(i),yv(i),tv(i)),tv(i+1)));
 #  xv(i+1) = xv(i) + (h/2)*(f(xv(i),yv(i),tv(i)) + f(xv(i) + h*f(xv(i),yv(i),tv(i)),yv(i) + h*g(xv(i),yv(i),tv(i)),tv(i+1))); 
 #end

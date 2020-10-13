@@ -14,7 +14,7 @@ n = input('cantidad de iteraciones: ');
 D = diag(diag(A)); 
 L = tril(A,-1); 
 U = triu(A,1); 
-x0 = zeros(size(b)); #valor inicial de x (si uso er no poner zeros())
+x0 = zeros(size(b)); #(si uso er no poner zeros())
 B = inv(D+L)*(-U) 
 c = inv(D+L)*b
 if max(abs(eig(B))) < 1 

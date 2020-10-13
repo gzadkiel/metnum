@@ -5,8 +5,8 @@ h = input('?x = h: ');
 k = input('?t = k: '); 
 cte = input('Constante: '); 
 r = cte*k/h^2;
-F1 = @(x) (1022); #x<1
-F2 = @(x) (1022); #x>=1  
+F1 = @(x) (); #x<1
+F2 = @(x) (1); #x>=1  
 Xi = input('X inicial: '); 
 Xf = input('X final: '); 
 disp('Temperatura en los bordes: ') 

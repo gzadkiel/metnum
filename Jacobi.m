@@ -3,9 +3,9 @@
 
 disp('sistema A*x = b')
 disp('matriz de coeficientes A: ')
-#A = lecturamatriz;
+A = lecturamatriz;
 disp('matriz de terminos ind. b: ')
-#b = lecturamatriz; 
+b = lecturamatriz; 
 #Iteraciones: 
 n = input('cantidad de iteraciones: '); 
 #tol = input('tol. de error (abs o rel): ') ;
@@ -14,7 +14,7 @@ n = input('cantidad de iteraciones: ');
 D = diag(diag(A)); 
 L = tril(A,-1); 
 U = triu(A,1); 
-x0 = zeros(size(b)); #valor inicial de x (si uso er no poner zeros())
+x0 = zeros(size(b)); #(si uso er no poner zeros())
 B = -inv(D)*(L+U)
 c = inv(D)*b
 if max(abs(eig(B))) < 1 
