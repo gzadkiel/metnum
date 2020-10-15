@@ -1,21 +1,25 @@
-function [Xn,funxn,err] = regula_falsi (f,intervalo,ER,maxiteraciones)
+function [Xn,funxn,err] = regula_falsi(f,intervalo,ER,maxiteraciones)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% la funcion regula_falsi funciona haciendo la interseccion entre el eje x con la recta que une los puntos a y b
 %% 
 %% las variables de entrada son [Xn,funxn,err] = regula_falsi (f,intervalo,ER,maxiteraciones)
-%%  f= funcion a evaluar debe ser del tipo f=@(x)  
-%%  intervalo= debe ser un vector del tipo [a,b]
-%%  ER= error buscado en la aproximacion en este caso el error se calcula como el tamaño del intervalo abs(b-a)
-%%  maxiteraciones= es la cantidad maxima de iteraciones a realizar
+%% f= funcion a evaluar debe ser del tipo f=@(x)  
+%% intervalo= debe ser un vector del tipo [a,b]
+%% ER= error buscado en la aproximacion en este caso el error se calcula como el tamaï¿½o del intervalo abs(b-a)
+%% maxiteraciones= es la cantidad maxima de iteraciones a realizar
 %% 
 %% como los errores tambien se pueden medir con la distancia al eje x existe regula_falsi_2
-i=0;
-er=9999999;
-er2=9999999;
-fx=99999999;       %inicio de variables
-x1=0;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+i = 0;
+er = 9999999;
+er2 = 9999999;
+fx = 99999999;       %inicio de variables
+x1 = 0;
 if f(intervalo (1))>0 
-    a=intervalo (1);
-    b=intervalo (2);
+    a = intervalo (1);
+    b = intervalo (2);
    else               % asignacion de a y b desde el vector intervalo que deberia ser un vector 1x2 [a,b]
      a=intervalo (2);
      b=intervalo (1); 
