@@ -1,15 +1,18 @@
 function T = implicito (T,Ti,Tf,Xi,Xf,h,Tt,k,r) 
-%%  T = implicito (T,Ti,Tf,Xi,Xf,h,Tt,k,r)
-%%
-%%T es un vector con las temperaturas iniciales
-%%Ti es la temperatura en el extremo Xi
-%%Tf es la temperatura en el extremo Xf
-%%Xi es el x inicial
-%%Xf es el x final
-%%h es el paso en x deltaX
-%%Tt es el tiempo final
-%%k es el paso en t deltat
-%%r es un valor de la constante en la mayoria de los casos (K*deltat)/deltaX^2 donde K depende del problema
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% T = implicito (T,Ti,Tf,Xi,Xf,h,Tt,k,r)
+%% T es un vector con las temperaturas iniciales
+%% Ti es la temperatura en el extremo Xi
+%% Tf es la temperatura en el extremo Xf
+%% Xi es el x inicial
+%% Xf es el x final
+%% h es el paso en x deltaX
+%% Tt es el tiempo final
+%% k es el paso en t deltat
+%% r es un valor de la constante en la mayoria de los casos (K*deltat)/deltaX^2 donde K depende del problema
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 vec_dist = Xi:h:Xf ; 
 vec_tiempo = 0:k:Tt;
 filas = length(vec_tiempo);
@@ -34,16 +37,13 @@ for i=2:n-1
   end
 end
 
-##T = zeros(length(vec_dist),length(vec_dist));
-##T;
-
-#vector preparado para incognitas: 
+%% vector preparado para incognitas: 
 for i=1:size(matcoefs,1)
   V(i,1) = 0;
 end
 V;
 
-#vector independiente del sistema
+%% vector independiente del sistema
 columna_ind = V;
 for i=1:length(columna_ind)
   columna_ind(i,1) = T(1,i); 
@@ -52,7 +52,7 @@ columna_ind(1,1) = T(1,1)+Ti*r;
 columna_ind(end,1) = T(1,end)+Tf*r;
 columna_ind;
 
-#Columna independiente del sistema
+%% columna independiente del sistema
 for j=2:length(vec_tiempo)
   V = inv(matcoefs)*columna_ind; 
   for z=1:length(V)
@@ -65,10 +65,10 @@ for j=2:length(vec_tiempo)
   columna_ind(end,1) = columna_ind(end,1)+Tf*r;
 end
 
-##for o=1:length(vec_tiempo)
-##  T(o,1) = Ti;
-##  T(o,end) = Tf;
-##end
+%%for o=1:length(vec_tiempo)
+%%  T(o,1) = Ti;
+%%  T(o,end) = Tf;
+%% end
 
 T
-endfunction
+end
