@@ -1,6 +1,7 @@
 function [t,dx,dy,dz] = heun3(f1,f2,f3,x0,y0,z0,h,tf)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
 %%Inputs
 %% x0 : initial condition of the first state variable
 %% y0 : initial condition of the second state variable
@@ -19,7 +20,8 @@ function [t,dx,dy,dz] = heun3(f1,f2,f3,x0,y0,z0,h,tf)
 %% f2 : Containing the expression dy/dt = f(t,x,y,z)
 %% f3 : Containing the expression dz/dt = f(t,x,y,z)
 %% (all these files are located in the same folder as this function file)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 dx = [];
 dy = [];

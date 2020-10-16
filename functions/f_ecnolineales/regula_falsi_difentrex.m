@@ -1,16 +1,18 @@
 function [Xn,funxn,err] = regula_falsi_difentrex(f,intervalo,ER,maxiteraciones)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% la funcion regula_falsi funciona haciendo la interseccion entre el eje x con la recta que une los puntos a y b
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% La funcion regula_falsi funciona haciendo la interseccion entre el eje x con la recta que une los puntos a y b.
 %% 
-%% las variables de entrada son [Xn,funxn,err] = regula_falsi (f,intervalo,ER,maxiteraciones)
-%% f= funcion a evaluar debe ser del tipo f=@(x)  
-%% intervalo= debe ser un vector del tipo [a,b]
-%% ER= error buscado en la aproximacion en este caso el error se calcula como el tama�o del intervalo abs(b-a)
-%% maxiteraciones= es la cantidad maxima de iteraciones a realizar
+%% Las variables de entrada son:
+%% f = funcion a evaluar debe ser del tipo f=@(x)  
+%% intervalo = debe ser un vector del tipo [a,b]
+%% ER = error buscado en la aproximacion en este caso el error se calcula como el tama�o del intervalo abs(b-a)
+%% maxiteraciones = es la cantidad maxima de iteraciones a realizar
 %% 
-%% como los errores tambien se pueden medir como el tama�o del intervalo existe regula_falsi
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Como los errores tambien se pueden medir como el tama�o del intervalo existe regula_falsi.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 i = 0;
 er = 999;

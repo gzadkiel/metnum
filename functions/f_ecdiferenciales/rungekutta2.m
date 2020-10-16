@@ -1,5 +1,5 @@
 function [x,y] = rungekutta2(f,g,paso,inicial,final,fx,fy)
-t = inicial:paso:final; %%calculamos los tk
+t = inicial:paso:final; %% calculamos los tk
 T = size(t);
 y(1) = fy;
 x(1) = fx;

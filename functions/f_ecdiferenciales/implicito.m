@@ -1,6 +1,7 @@
 function T = implicito (T,Ti,Tf,Xi,Xf,h,Tt,k,r) 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
 %% T = implicito (T,Ti,Tf,Xi,Xf,h,Tt,k,r)
 %% T es un vector con las temperaturas iniciales
 %% Ti es la temperatura en el extremo Xi
@@ -11,7 +12,8 @@ function T = implicito (T,Ti,Tf,Xi,Xf,h,Tt,k,r)
 %% Tt es el tiempo final
 %% k es el paso en t deltat
 %% r es un valor de la constante en la mayoria de los casos (K*deltat)/deltaX^2 donde K depende del problema
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 vec_dist = Xi:h:Xf ; 
 vec_tiempo = 0:k:Tt;

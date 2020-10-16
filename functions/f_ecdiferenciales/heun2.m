@@ -1,6 +1,7 @@
 function [t,dx,dy] = heun2(f1,f2,x0,y0,h,tf)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
 %% Inputs: 
 %% x0 : initial condition of the first state variable
 %% y0 : initial condition of the second state variable
@@ -16,7 +17,8 @@ function [t,dx,dy] = heun2(f1,f2,x0,y0,h,tf)
 %% f1 : Containing the expression dx/dt = f(t,x,y,z)
 %% f2 : Containing the expression dy/dt = f(t,x,y,z)
 %% (all these files must be located in the same folder as this function file)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 dx = [];
 dy = [];
