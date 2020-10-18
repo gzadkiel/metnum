@@ -18,11 +18,11 @@ i = 0;
 er = 999;
 x1 = 0;
 if f(intervalo (1))>0 
-    a = intervalo (1);
-    b = intervalo (2);
-   else
-     a = intervalo (2);
-     b = intervalo (1);
+  a = intervalo (1);
+  b = intervalo (2);
+else
+  a = intervalo (2);
+  b = intervalo (1);
 end
 while er>=ER && i<n
   if f(a)*f(b)<0 
@@ -31,13 +31,11 @@ while er>=ER && i<n
       b = x1;
     else
       a = x1;
-   end
-   else
-   disp('INTERVALO INCORRECTO F(a)*F(b)>0');
-   disp('INTERVALO INCORRECTO F(a)*F(b)>0');
-   disp('INTERVALO INCORRECTO F(a)*F(b)>0');
-   i = iter;
-   end
+    end
+  else
+    disp('INTERVALO INCORRECTO F(a)*F(b)>0');
+    i = iter;
+  end
  er = abs(b-a);
  i = i+1;
 end
